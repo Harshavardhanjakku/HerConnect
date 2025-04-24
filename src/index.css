@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 342 100% 98%;
+    --foreground: 291 30% 26%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 291 30% 26%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 291 30% 26%;
+
+    --primary: 342 100% 92%;
+    --primary-foreground: 291 30% 26%;
+
+    --secondary: 270 36% 90%;
+    --secondary-foreground: 291 30% 26%;
+
+    --muted: 270 36% 95%;
+    --muted-foreground: 291 30% 15%;
+
+    --accent: 270 36% 90%;
+    --accent-foreground: 291 30% 26%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 36% 85%;
+    --input: 270 36% 85%;
+    --ring: 291 30% 26%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  body {
+    @apply bg-pearlWhite text-deepPlum font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .hercycle-button {
+    @apply rounded-full bg-blushRose px-6 py-3 font-medium text-deepPlum shadow-md transition-all hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-deepPlum focus:ring-offset-2;
+  }
+  
+  .hercycle-card {
+    @apply rounded-2xl bg-white p-6 shadow-md transition-all hover:shadow-lg;
+  }
+  
+  .hercycle-input {
+    @apply rounded-full border-softLavender bg-white px-4 py-3 focus:border-forestTeal focus:outline-none focus:ring-1 focus:ring-forestTeal;
+  }
+
+  .wave-animation {
+    @apply animate-wave;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
